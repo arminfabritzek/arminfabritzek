@@ -41,8 +41,7 @@ This tool is ideal for researchers studying the interplay between climate, veget
 ---
 
 ### 📊 GitHub Stats
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=starmin-code&show_icons=true&theme=radical)
-
+![Meine GitHub-Statistiken](https://github-readme-stats.vercel.app/api?username=arminfabritzek&show_icons=true&theme=radical)
 ---
 
 ### ⚡ Fun Fact
