@@ -6,20 +6,20 @@ Biologist turned AI-engineer, building CV pipelines to monitor wildlife in real 
 **Tech & Tools:**  
 <div align="center">
   <!-- row 1 -->
-  <img src="https://img.shields.io/badge/Python-0057B8?style=for-the-badge&logo=python&logoColor=FFD700" alt="Python" width="60" style="margin:3px;"/>
-  <img src="https://img.shields.io/badge/PyTorch-0057B8?style=for-the-badge&logo=PyTorch&logoColor=FFD700" alt="PyTorch" width="60" style="margin:3px;"/>
-  <img src="https://img.shields.io/badge/OpenCV-0057B8?style=for-the-badge&logo=opencv&logoColor=FFD700" alt="OpenCV" width="60" style="margin:3px;"/>
-  <img src="https://img.shields.io/badge/YOLO-0057B8?style=for-the-badge&logo=yolo&logoColor=FFD700" alt="YOLO" width="60" style="margin:3px;"/>
-  <img src="https://img.shields.io/badge/EfficientNet-0057B8?style=for-the-badge&logo=efficientnet&logoColor=FFD700" alt="EfficientNet" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/Python-0057B8?style=for-the-badge&logo=python&logoColor=FFD700" alt="Python" width="80" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/PyTorch-0057B8?style=for-the-badge&logo=PyTorch&logoColor=FFD700" alt="PyTorch" width="80" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/OpenCV-0057B8?style=for-the-badge&logo=opencv&logoColor=FFD700" alt="OpenCV" width="80" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/YOLO-0057B8?style=for-the-badge&logo=yolo&logoColor=FFD700" alt="YOLO" width="80" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/EfficientNet-0057B8?style=for-the-badge&logo=efficientnet&logoColor=FFD700" alt="EfficientNet" width="80" style="margin:3px;"/>
 
   <br/>
 
   <!-- row 2 -->
-  <img src="https://img.shields.io/badge/pandas-FFD700?style=for-the-badge&logo=pandas&logoColor=0057B8" alt="pandas" width="60" style="margin:3px;"/>
-  <img src="https://img.shields.io/badge/matplotlib-FFD700?style=for-the-badge&logo=matplotlib&logoColor=0057B8" alt="matplotlib" width="60" style="margin:3px;"/>
-  <img src="https://img.shields.io/badge/folium-FFD700?style=for-the-badge&logo=leaflet&logoColor=0057B8" alt="folium" width="60" style="margin:3px;"/>
-  <img src="https://img.shields.io/badge/geopandas-FFD700?style=for-the-badge&logo=python&logoColor=0057B8" alt="geopandas" width="60" style="margin:3px;"/>
-  <img src="https://img.shields.io/badge/FFmpeg-FFD700?style=for-the-badge&logo=ffmpeg&logoColor=0057B8" alt="FFmpeg" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/pandas-FFD700?style=for-the-badge&logo=pandas&logoColor=0057B8" alt="pandas" width="80" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/matplotlib-FFD700?style=for-the-badge&logo=matplotlib&logoColor=0057B8" alt="matplotlib" width="80" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/folium-FFD700?style=for-the-badge&logo=leaflet&logoColor=0057B8" alt="folium" width="80" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/geopandas-FFD700?style=for-the-badge&logo=python&logoColor=0057B8" alt="geopandas" width="80" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/FFmpeg-FFD700?style=for-the-badge&logo=ffmpeg&logoColor=0057B8" alt="FFmpeg" width="80" style="margin:3px;"/>
 </div>
 
 
