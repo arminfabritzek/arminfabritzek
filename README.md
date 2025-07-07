@@ -1,24 +1,72 @@
-# 👋 Hi there, I'm Armin Fabritzek!
+# Hi, I’m Armin Fabritzek 👋  
+**Biologist • AI researcher • Software developer**  
+Biologist turned AI-engineer, building CV pipelines to monitor wildlife in real time.
 
-### 👀 About Me
-I’m a **biologist, AI researcher, and software developer** passionate about **nature protection, robotics, and machine learning**. My work lies at the intersection of **biology and technology**, using **computer vision** and **AI** to tackle real-world challenges.
+---
+**Tech & Tools:**  
+<div align="center">
+  <!-- row 1 -->
+  <img src="https://img.shields.io/badge/Python-0057B8?style=for-the-badge&logo=python&logoColor=FFD700" alt="Python" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/PyTorch-0057B8?style=for-the-badge&logo=PyTorch&logoColor=FFD700" alt="PyTorch" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/OpenCV-0057B8?style=for-the-badge&logo=opencv&logoColor=FFD700" alt="OpenCV" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/YOLO-0057B8?style=for-the-badge&logo=yolo&logoColor=FFD700" alt="YOLO" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/EfficientNet-0057B8?style=for-the-badge&logo=efficientnet&logoColor=FFD700" alt="EfficientNet" width="60" style="margin:3px;"/>
+
+  <br/>
+
+  <!-- row 2 -->
+  <img src="https://img.shields.io/badge/pandas-FFD700?style=for-the-badge&logo=pandas&logoColor=0057B8" alt="pandas" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/matplotlib-FFD700?style=for-the-badge&logo=matplotlib&logoColor=0057B8" alt="matplotlib" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/folium-FFD700?style=for-the-badge&logo=leaflet&logoColor=0057B8" alt="folium" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/geopandas-FFD700?style=for-the-badge&logo=python&logoColor=0057B8" alt="geopandas" width="60" style="margin:3px;"/>
+  <img src="https://img.shields.io/badge/FFmpeg-FFD700?style=for-the-badge&logo=ffmpeg&logoColor=0057B8" alt="FFmpeg" width="60" style="margin:3px;"/>
+</div>
 
 
-### 🌟 Current Project: **WatchMyBirds**
-**WatchMyBirds** is an AI-powered **real-time object detection system** for birdwatching and wildlife monitoring. It supports **webcams**, **IP cameras**, and **RTSP streams**, turning any camera into a **smart detection system**.
+---
 
-🔹 **Key Features**:  
-✅ **Live Video Streaming** with object detection overlays  
-✅ **Automated Frame Capture** when birds are detected  
-✅ **Telegram Notifications** for real-time alerts  
+## 🚀 Featured Projects
+### WatchMyBirds  
+**WatchMyBirds** is an AI-powered **real-time object detection system** for birdwatching and wildlife monitoring using webcams, IP-cams & RTSP streams. It supports **webcams**, **IP cameras**, and **RTSP streams**, turning any camera into a **smart detection system**.
+
+### WatchMyBirds-Pipelines  
+End-to-end data prep & training pipelines for object detection & classification
+
+
+**[02_preannotate_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Data/blob/main/02_preannotate_v0x.py)**: Preannotation using Grounding DINO and SAM
+
+Automates zero-shot preannotation of bird bounding boxes: reads the metadata CSV, processes images in batches using Grounding DINO (and optional SAM) with ensemble prompts, applies NMS and nested-box filtering (and SAM refinement if enabled), then writes COCO-format annotations back into the CSV.
+
+**[5_OD_prepare_data_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Train-YOLO/blob/main/5_OD_prepare_data_v0x.py)**: Dataset split + augmentation for YOLO
+
+Automates preparation and splitting of a YOLO object-detection dataset: reads and filters metadata, generates image and label files, applies augmentation and class balancing, adds negative samples, and outputs the required configuration and split files.
+
+**[6_OD_train_yolo_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Train-YOLO/blob/main/6_OD_train_yolo_v0x.py)**: YOLO training, TensorBoard & ONNX export
+
+End-to-end YOLO training pipeline: manages environment and TensorBoard, loads configs and data, runs model training, exports the best weights to ONNX, and assembles all training and inference configuration files.
+
+**[7_CLASSI_prepare_data_classify_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Classifier/blob/main/7_CLASSI_prepare_data_classify_v0x.py)**: Crop & balance for EfficientNet classifier
+
+Automates preparation of a species‐classification dataset: reads and filters metadata, creates and resizes square image crops per species, splits into train/val/test, balances classes via augmentation and downsampling, and outputs the final organized folders with run settings.
+
+**[8_CLASSI_train_efficientnet_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Classifier/blob/main/8_CLASSI_train_efficientnet_v0x.py)**: Mixed-precision finetuning with Mixup/CutMix 
+
+Fine-tunes an EfficientNet classifier on the prepared dataset: sets up data transforms and loaders, initializes model architecture and hyperparameters, runs mixed-precision training with mixup/cutmix, backbone unfreezing and learning-rate scheduling, logs metrics to TensorBoard, saves and exports the best weights (including ONNX), and records all run settings.
+
+---
+
+
+![WatchMyBirds Demo](https://raw.githubusercontent.com/arminfabritzek/WatchMyBirds/main/assets/birds_1280.gif)  
+
+---
+![WatchMyBirds in Action](https://raw.githubusercontent.com/arminfabritzek/WatchMyBirds/main/assets/app_landing_page.jpg)
+*Clean, user-friendly web interface with image gallery support!*
+
+
+---
 
 Built for **hobbyists, researchers, and wildlife enthusiasts**, WatchMyBirds makes real-time monitoring **accessible and powerful**. 🚀  
 📂 [Explore the Repository](https://github.com/arminfabritzek/WatchMyBirds)  
-
-
-![WatchMyBirds in Action](https://raw.githubusercontent.com/arminfabritzek/WatchMyBirds/main/assets/birds_1280.gif)
-
-
 
 
 ---
