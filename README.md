@@ -26,8 +26,14 @@ Biologist turned AI-engineer, building CV pipelines to monitor wildlife in real 
 ---
 
 ## 🚀 Featured Projects
-### WatchMyBirds  
+### [WatchMyBirds](https://github.com/arminfabritzek/WatchMyBirds)  
 **WatchMyBirds** is an AI-powered **real-time object detection system** for birdwatching and wildlife monitoring using webcams, IP-cams & RTSP streams. It supports **webcams**, **IP cameras**, and **RTSP streams**, turning any camera into a **smart detection system**.
+
+---
+
+![WatchMyBirds Demo](https://raw.githubusercontent.com/arminfabritzek/WatchMyBirds/main/assets/birds_1280.gif)  
+
+---
 
 ### WatchMyBirds-Pipelines  
 End-to-end data prep & training pipelines for object detection & classification
@@ -55,21 +61,6 @@ Fine-tunes an EfficientNet classifier on the prepared dataset: sets up data tran
 
 ---
 
-
-![WatchMyBirds Demo](https://raw.githubusercontent.com/arminfabritzek/WatchMyBirds/main/assets/birds_1280.gif)  
-
----
-![WatchMyBirds in Action](https://raw.githubusercontent.com/arminfabritzek/WatchMyBirds/main/assets/app_landing_page.jpg)
-*Clean, user-friendly web interface with image gallery support!*
-
-
----
-
-Built for **hobbyists, researchers, and wildlife enthusiasts**, WatchMyBirds makes real-time monitoring **accessible and powerful**. 🚀  
-📂 [Explore the Repository](https://github.com/arminfabritzek/WatchMyBirds)  
-
-
----
 
 ### 📡 Other Projects
 🔬 **PalaeoMapEurope** – A **Python-based visualization tool** mapping human artifacts and vegetation zones in Europe during the Quaternary period.  
