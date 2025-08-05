@@ -26,7 +26,7 @@ Biologist turned AI-engineer, building CV pipelines to monitor wildlife in real 
 ---
 
 ## 🚀 Featured Projects
-### [WatchMyBirds](https://github.com/arminfabritzek/WatchMyBirds)  
+### [WatchMyBirds App](https://github.com/arminfabritzek/WatchMyBirds)  
 **WatchMyBirds** is an AI-powered **real-time object detection system** for birdwatching and wildlife monitoring using webcams, IP-cams & RTSP streams. It supports **webcams**, **IP cameras**, and **RTSP streams**, turning any camera into a **smart detection system**.
 
 ---
@@ -35,29 +35,64 @@ Biologist turned AI-engineer, building CV pipelines to monitor wildlife in real 
 
 ---
 
-### WatchMyBirds-Pipelines  
-End-to-end data prep & training pipelines for object detection & classification
+### 🐦 WatchMyBirds Pipelines
+Fully automated training pipeline using modern tools like PyTorch, Hugging Face (--> Optuna and MLflow). End-to-end data preparation & training pipelines for object detection and species classification.
+
+**🧩 Key Features**
+
+- ✅ Modular and configurable (YAML-based)
+- 🧠 State-of-the-art transfer learning (EfficientNet)
+- 🔍 Automated hyperparameter tuning with Optuna
+- 📈 MLflow tracking for all experiments
+- ☁️ Optional Hugging Face model export
+- 🧪 Easily extendable to other image classification tasks
 
 
-**[02_preannotate_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Data/blob/main/02_preannotate_v0x.py)**: Preannotation using Grounding DINO and SAM
+**🧭 Features Overview**
 
-Automates zero-shot preannotation of bird bounding boxes: reads the metadata CSV, processes images in batches using Grounding DINO (and optional SAM) with ensemble prompts, applies NMS and nested-box filtering (and SAM refinement if enabled), then writes COCO-format annotations back into the CSV.
+**🔎 Zero-Shot Preannotation**
 
-**[5_OD_prepare_data_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Train-YOLO/blob/main/5_OD_prepare_data_v0x.py)**: Dataset split + augmentation for YOLO
+- Uses Grounding DINO (with optional SAM) to preannotate bird bounding boxes.
+- Reads metadata CSV, processes images in batches with ensemble prompts.
+- Applies NMS, nested-box filtering, and optional SAM refinement.
+- Outputs COCO-format annotations back into the CSV.
 
-Automates preparation and splitting of a YOLO object-detection dataset: reads and filters metadata, generates image and label files, applies augmentation and class balancing, adds negative samples, and outputs the required configuration and split files.
+**🗂️ YOLO Dataset Preparation**
 
-**[6_OD_train_yolo_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Train-YOLO/blob/main/6_OD_train_yolo_v0x.py)**: YOLO training, TensorBoard & ONNX export
+- Reads and filters metadata based on your criteria.
+- Generates YOLO-format image and label files.
+- Adds augmentation, class balancing, and negative samples.
+- Produces ready-to-train dataset with config and split files.
 
-End-to-end YOLO training pipeline: manages environment and TensorBoard, loads configs and data, runs model training, exports the best weights to ONNX, and assembles all training and inference configuration files.
+**🚀 YOLO Training Pipeline**
 
-**[7_CLASSI_prepare_data_classify_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Classifier/blob/main/7_CLASSI_prepare_data_classify_v0x.py)**: Crop & balance for EfficientNet classifier
+- Manages environment and TensorBoard logging.
+- Loads configs and runs training with checkpointing.
+- Exports the best weights to ONNX.
+- Bundles final training and inference configs automatically.
 
-Automates preparation of a species‐classification dataset: reads and filters metadata, creates and resizes square image crops per species, splits into train/val/test, balances classes via augmentation and downsampling, and outputs the final organized folders with run settings.
+**🦜 Classification Dataset Preparation**
 
-**[8_CLASSI_train_efficientnet_v0x.py](https://github.com/arminfabritzek/WatchMyBirds-Classifier/blob/main/8_CLASSI_train_efficientnet_v0x.py)**: Mixed-precision finetuning with Mixup/CutMix 
+- Creates square image crops per species.
+- Handles train/val/test splitting and class balancing.
+- Augments data and outputs organized dataset folders with run settings.
 
-Fine-tunes an EfficientNet classifier on the prepared dataset: sets up data transforms and loaders, initializes model architecture and hyperparameters, runs mixed-precision training with mixup/cutmix, backbone unfreezing and learning-rate scheduling, logs metrics to TensorBoard, saves and exports the best weights (including ONNX), and records all run settings.
+**🎯 EfficientNet Fine-Tuning**
+
+- Sets up mixed-precision training with mixup/cutmix.
+- Progressive backbone unfreezing and LR scheduling.
+- Tracks metrics via TensorBoard.
+- Saves and exports the best weights (PyTorch + ONNX) with full run configs.
+
+---
+
+
+### 🚀 Interests & Collaboration
+
+🦾 **Autonomous Systems & Robotics**  
+🔬 **AI-driven Biodiversity Research**  
+🤖 **Multi-Agent Systems & AI**  
+
 
 ---
 
@@ -67,12 +102,6 @@ Fine-tunes an EfficientNet classifier on the prepared dataset: sets up data tran
 📍 Uses **geospatial mapping, radiocarbon dating, and vegetation analysis** to study human-environment interactions.  
 📂 [Explore the Repository](https://github.com/arminfabritzek/PalaeoMapEurope)  
 
----
-
-### 🚀 Interests & Collaboration
-🦾 **Autonomous Systems & Robotics**  
-🔬 **AI-driven Biodiversity Research**  
-🤖 **Multi-Agent Systems & AI**  
 
 ---
 
