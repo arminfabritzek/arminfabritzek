@@ -1,9 +1,7 @@
-# Hi, I’m Armin Fabritzek 👋  
-**Biologist • AI researcher • Software developer**  
-Biologist turned AI-engineer, building CV pipelines to monitor wildlife in real time.
+# Hi, I’m Armin Fabritzek 👋
+**Biologist → AI Engineer** building computer‑vision systems for wildlife monitoring.
 
----
-**Tech & Tools:**  
+--- 
 <div align="center">
   <!-- row 1 -->
   <img src="https://img.shields.io/badge/Python-0057B8?style=for-the-badge&logo=python&logoColor=FFD700" alt="Python" width="80" style="margin:3px;"/>
@@ -21,6 +19,30 @@ Biologist turned AI-engineer, building CV pipelines to monitor wildlife in real 
   <img src="https://img.shields.io/badge/geopandas-FFD700?style=for-the-badge&logo=python&logoColor=0057B8" alt="geopandas" width="80" style="margin:3px;"/>
   <img src="https://img.shields.io/badge/FFmpeg-FFD700?style=for-the-badge&logo=ffmpeg&logoColor=0057B8" alt="FFmpeg" width="80" style="margin:3px;"/>
 </div>
+
+---
+
+> 🐦 **WatchMyBirds** — real‑time bird detection **and** species classification from webcams & RTSP streams.
+
+[🔗 App](https://github.com/arminfabritzek/WatchMyBirds) · [🧪 Training Pipeline](https://github.com/arminfabritzek/watchmybirds-pipeline) · [🤗 Model on HF](https://huggingface.co/arminfabritzek/WatchMyBirds-Models/tree/main)
+
+---
+
+## 🚀 WatchMyBirds at a glance
+- **Realtime** object detection (YOLOv8) + **species classification** (EfficientNet)
+- **End‑to‑end pipeline**: data prep → verification → HPO (Optuna/MLflow) → training → ONNX export → Hugging Face upload
+- **29 species**, ~10k images; automatic pre‑annotation via GroundingDINO (+ optional SAM)
+- **Results**: OD mAP@[.5:.95] = **xx %** · CLS top‑1 = **xx %** (val)
+- **Tracking**: MLflow experiments; model registry with “latest” pointers
+
+<a id="watchmybirds-demo"></a>
+
+![WatchMyBirds Demo](https://raw.githubusercontent.com/arminfabritzek/WatchMyBirds/main/assets/birds_1280.gif)
+
+---
+
+## 🔧 Tech I use on this project
+Python · PyTorch · Ultralytics YOLO · timm/EfficientNet · OpenCV · Optuna · MLflow · Hugging Face · ONNX
 
 
 ---
