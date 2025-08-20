@@ -24,7 +24,7 @@
 
 > 🐦 **WatchMyBirds** — real‑time bird detection **and** species classification from webcams & RTSP streams.
 
-[🔗 App](https://github.com/arminfabritzek/WatchMyBirds) · [🧪 Training Pipeline](https://github.com/arminfabritzek/watchmybirds-pipeline) · [🤗 Model on HF](https://huggingface.co/arminfabritzek/WatchMyBirds-Models/tree/main)
+[🔗 App](https://github.com/arminfabritzek/WatchMyBirds) · [🧪 Training Pipeline](https://github.com/arminfabritzek/TrainMyBirds) · [🤗 Model on HF](https://huggingface.co/arminfabritzek/WatchMyBirds-Models/tree/main)
 
 ---
 
