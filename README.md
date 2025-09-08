@@ -29,7 +29,7 @@
 ---
 
 ## 🚀 WatchMyBirds at a glance
-- **Realtime** object detection (YOLOv8) + **species classification** (EfficientNet)
+- **Realtime** object detection (YOLOv8/v11) + **species classification** (EfficientNet)
 - **End‑to‑end pipeline**: data prep → verification → HPO (Optuna/MLflow) → training → ONNX export → Hugging Face upload
 - **29 species**, ~10k images; automatic pre‑annotation via GroundingDINO (+ optional SAM)
 - **Results**: OD mAP@[.5:.95] = **xx %** · CLS top‑1 = **xx %** (val)
@@ -48,16 +48,13 @@ Python · PyTorch · Ultralytics YOLO · timm/EfficientNet · OpenCV · Optuna �
 ---
 
 ## 🚀 Featured Projects
-### [WatchMyBirds App](https://github.com/arminfabritzek/WatchMyBirds)  
+### [🐦 WatchMyBirds App](https://github.com/arminfabritzek/WatchMyBirds)  
 **WatchMyBirds** is an AI-powered **real-time object detection system** for birdwatching and wildlife monitoring using webcams, IP-cams & RTSP streams. It supports **webcams**, **IP cameras**, and **RTSP streams**, turning any camera into a **smart detection system**.
 
 ---
 
-![WatchMyBirds Demo](https://raw.githubusercontent.com/arminfabritzek/WatchMyBirds/main/assets/birds_1280.gif)  
+### [🧪 TrainMyBirds](https://github.com/arminfabritzek/TrainMyBirds)
 
----
-
-### 🐦 WatchMyBirds Pipelines
 Fully automated training pipeline using modern tools like PyTorch, Hugging Face (--> Optuna and MLflow). End-to-end data preparation & training pipelines for object detection and species classification.
 
 **🧩 Key Features**
